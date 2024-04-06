@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #34495e;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        height: 500px;
+        width: 500px;
+        background-color: #ccc;
+        border-radius: 50%;
+        border: 15px solid #dde;
+        position: relative;
+        overflow: hidden;
+        transition: 5s;
+    }
+    
 </style>
 <body>
     <button id="spin">SPIN</button>
+    <span class="arrow"></span>
     <div class="container">
         <div class="one">Wendy's</div>
         <div class="two">Popeye's</div>
@@ -22,4 +45,5 @@
     </div>
 
 </body>
+<script></script>
 </html>
