@@ -102,8 +102,8 @@
     
     #spin {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 47.5%;
+        left: 47.5%;
         background-color: #e2e2e2;
         transform: translateX(-50%, -50%);
         text-transform: uppercase;
@@ -111,7 +111,7 @@
         border: 8px solid #fff;
         font-weight: bold;
         font-size: 20px;
-        color: #e2e2e2;
+        color: #e91e63;
         height: 80px;
         width: 80px;
         border-radius: 50%;
@@ -137,5 +137,14 @@
     </div>
 
 </body>
-<script></script>
+<script>
+    let container = document.querySelector('.container');
+    let btn = document.getElementById('spin');
+    let number = Math.ceil(Math.random()*1000);
+
+    btn.onclick = function () {
+        container.style.transform = 'rotate(' + number + 'deg)';
+        number +=Math.ceil(Math.random()*1000);
+    }
+</script>
 </html>
